@@ -9,7 +9,7 @@ function bmiCalc() {
   else if (weight === "" || isNaN(weight))
     results.innerHTML = "Invalid Weight! Please use numbers";
   else {
-    const bmi = (weight / ((height * height) / 10000)).toFixed();
+    const bmi = (weight / ((height * height) / 10000)).toFixed(2);
     results.innerHTML = bmi;
   }
 }
